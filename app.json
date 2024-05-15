@@ -1,10 +1,11 @@
 {
   "expo": {
-    "name": "Job_Application",
-    "slug": "Job_Application",
+    "name": "TravelCompanion",
+    "slug": "TravelCompanion",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "scheme": "myapp",
+    "icon": "./assets/travelIcon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -19,12 +20,25 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/travelIcon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.yourcompany.aayush",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "758066bd-70de-4b64-b888-c72656108c53"
+      }
     }
   }
 }
